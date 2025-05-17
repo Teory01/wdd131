@@ -211,7 +211,7 @@ footer p {
   font-style: italic;
 }
 
-/* ===== PRINT STYLES ===== */
+
 @media print {
   nav, .web-resources {
     display: none;

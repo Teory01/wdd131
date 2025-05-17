@@ -3,53 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Oribi Teo-Iyalla.Brief keyword summary of page content">
+    <meta name="description" content="Personal portfolio page for Oribi Teo-Iyalla, software developer and BYU-Idaho student">
     <meta name="author" content="Oribi Teo-Iyalla">
     <title>WDD 131 – Dynamic Web Fundamentals - Oribi Teo-Iyalla</title>
-
     <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/getdates.js" defer></script>
 
+
 </head>
 <body>
-    <header>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header role="banner">
         <h1>WDD 131: Dynamic Web Fundamentals - Oribi Teo-Iyalla</h1>
-        <nav>
+        <nav role="navigation">
             <a href="https://www.linkedin.com/in/oribi-teo-iyalla-649910305">LinkedIn</a>
             <a href="https://byupw.instructure.com/">BYU-I Canvas</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng">Scripture</a>
-            <a href="#">Final Project</a>
-
-            
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng">Favorite Scripture</a>
+            <a href="#" aria-label="Final project details">Final Project</a>
         </nav>
     </header>
-    <main>
+
+
+
+    <main id="main" role="main">
         <section class="card">
             <h2>About Me</h2>
             <div class="profile">
-
-               <img src="images/profile.jpg" alt="My Portrait">
-               
-               
+               <img src="images/profile.jpg" alt="Portrait of Oribi Teo-Iyalla">
                <p>My name is Oribi Teo-Iyalla. I am a software developer and I am currently studying at BYU-Idaho. I am interested in web development and I am excited to learn more about it.
                   I am also a member of the Church of Jesus Christ of Latter-day Saints. I enjoy reading scriptures and studying theology. I am also an aspiring father and would someday enjoy spending time with my family.</p>
-               
             </div>
             
 
+
             <div class="country">
-                <h2>Abuja, Nigeria</h2>  <!-- Changed from h3 to h2 -->
+                <h2>Abuja, Nigeria</h2>
                 <div class="country-content">
                     <div class="flag-container">
-                        <img src="images/Nigerian-Flag.jpg?v=2" alt="Flag of Nigeria">
-
+                        <img src="images/Nigerian-Flag.jpg?v=2" alt="Official flag of Nigeria">
                         <figcaption>Flag of Nigeria</figcaption>
                     </div>
                     <div class="country-description">
                         <p>Nigeria is a country in West Africa. It is a land of diverse cultures, languages, and religions. The capital is Abuja, and the largest city is Lagos.
-                           Nigeria is known for its rich history, beautiful landscapes, and vibrant culture. It is also a country with a lot of natural resources, including oil and gas.
-
-                        </p>
+                           Nigeria is known for its rich history, beautiful landscapes, and vibrant culture. It is also a country with a lot of natural resources, including oil and gas.</p>
                     </div>
                 </div>
             </div>
@@ -57,19 +53,19 @@
 
         <section class="web-resources">
             <h2>Web Resources</h2>
-        
-
             <ul>
-                <li><a href="https://dev.to" target="_blank" rel="noopener">Dev.to Community</a></li>
-                    <li><a href="https://smashingmagazine.com" target="_blank" rel="noopener">Smashing Magazine</a></li>
-                    <li><a href="https://css-tricks.com" target="_blank" rel="noopener">CSS Tricks</a></li>
-                    <li><a href="https://www.w3schools.com" target="_blank" rel="noopener">W3 Schools</a></li>
-                    <li><a href="https://www.udemy.com" target="_blank" rel="noopener">Udemy</a></li>
+                <li><a href="https://dev.to" target="_blank" rel="noopener noreferrer">Dev.to Community</a></li>
+                <li><a href="https://smashingmagazine.com" target="_blank" rel="noopener noreferrer">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com" target="_blank" rel="noopener noreferrer">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com" target="_blank" rel="noopener noreferrer">Udemy</a></li>
             </ul>
         </section>
-
     </main>
-    <footer>
+
+
+    
+    <footer role="contentinfo">
         <p>&copy;<span id="currentyear"></span> Oribi Teo-Iyalla - Nigeria</p>
         <p id="lastModified">Last Modification: </p>
     </footer>

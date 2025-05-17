@@ -129,11 +129,18 @@ main {
   }
 }
 
+.profile {
+    display: flex;
+    flex-direction: row-reverse; /* Reverses the order (image now on right) */
+    align-items: center;         /* Vertically centers items */
+    gap: 20px;                   /* Adds space between text and image */
+}
+
 .profile img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border: 3px solid var(--primary-color);
+    width: 150px;               /* Adjust width as needed */
+    height: auto;               /* Maintains aspect ratio */
+    border-radius: 8px;         /* Optional: Rounded corners */
+}
 }
 
 figcaption {

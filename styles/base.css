@@ -1,13 +1,13 @@
 /* ===== BASE STYLES ===== */
 :root {
-  --primary-color: #57ccbc; /* Darkened for better contrast */
-  --secondary-color: #3c413d;
-  --accent-color: #223957; /* Changed to a standard blue with good contrast */
-  --text-color: #0f0e0e;
-  --light-text: #110e0e; /* Pure white for maximum contrast */
-  --background-color: #a39696;
-  --card-bg: #f8f1f1;
-  --border-color: #0c0707;
+  --primary-color: #444444; /* Darkened for better contrast */
+  --secondary-color: #666666;
+  --accent-color: #1a73e8; /* Changed to a standard blue with good contrast */
+  --text-color: #333333;
+  --light-text: #ffffff; /* Pure white for maximum contrast */
+  --background-color: #f5f5f5;
+  --card-bg: #ffffff;
+  --border-color: #dddddd;
 }
 
 * {
@@ -141,7 +141,7 @@ main {
     height: auto;               /* Maintains aspect ratio */
     border-radius: 8px;         /* Optional: Rounded corners */
 }
-}
+
 
 figcaption {
   font-style: italic;
@@ -213,7 +213,7 @@ figcaption {
 }
 
 .web-resources a {
-  color: #0a2847; /* Darker blue for better contrast (4.68:1 on white) */
+  color: #0056b3; /* Darker blue for better contrast (4.68:1 on white) */
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -222,7 +222,6 @@ figcaption {
   color: #003d7a; /* Even darker for hover state */
   text-decoration: underline;
 }
-
 /* ===== FOOTER ===== */
 footer {
   background-color: #444444; /* Darkened from original #555 */
@@ -239,9 +238,10 @@ footer p {
 }
 
 #lastModified { /* Fixed typo from #lastmodified to match HTML */
-  color: rgba(194, 164, 164, 0.9); /* Increased opacity for better contrast */
+  color: rgba(255, 255, 255, 0.9); /* Increased opacity for better contrast */
   font-style: italic;
 }
+
 
 @media print {
   nav, .web-resources {

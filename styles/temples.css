@@ -1,0 +1,156 @@
+/* Base Styles */
+:root {
+    --primary-color: #4a6fa5;
+    --secondary-color: #166088;
+    --accent-color: #4fc3dc;
+    --text-color: #333;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-color);
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Header Styles */
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.primary-nav {
+    width: 100%;
+    display: none;
+}
+
+.primary-nav.active {
+    display: block;
+}
+
+.primary-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.primary-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.primary-nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+.primary-nav a:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+
+/* Main Content */
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+main h1 {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 2rem;
+}
+
+
+.temple-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+figure {
+    margin: 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+figure:hover {
+    transform: translateY(-5px);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    padding: 1rem;
+    text-align: center;
+    background-color: white;
+    font-weight: bold;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--dark-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#lastModified { /* Fixed typo from #lastmodified to match HTML */
+  color: rgba(255, 255, 255, 0.9); /* Increased opacity for better contrast */
+  font-style: roboto;
+}
+
+.primary-nav {
+  display: none;
+}
+
+.primary-nav[data-visible="true"] {
+  display: block;
+}

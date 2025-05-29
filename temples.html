@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" 
+     content="Explore stunning photos of the Salt Lake Temple in a responsive gallery. Learn about its architecture and history.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link 
+     rel="preload" 
+     href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" 
+     as="style"
+     onload="this.onload=null;this.rel='stylesheet'">
+
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap">
+    </noscript>
+
+    <!-- CSS Files (Mobile First) -->
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
+    
+    <!-- Deferred JavaScript -->
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Temple Album</h1>
+            <button 
+             class="hamburger" 
+             aria-label="Toggle Menu" 
+             aria-expanded="false"
+            >
+             ☰
+            </button>
+            <nav class="primary-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Home</h1>
+        <div class="temple-grid">
+            <figure>
+                <img src="images/salt-lake-temple-1.webp" alt="Salt Lake Temple exterior rendering">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple-2.webp" alt="Salt Lake Temple, exterior with sphires against a blue sky">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple-3.webp" alt="Salt Lake Temple stunning architecture">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple-4.webp" alt="Salt Lake Temple, learn about this amazing temple.">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple-5.webp" alt="Stunning view of Salt Lake Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple-6.webp" alt="Explore the stunning masterpiece of Salt Lake Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple-7.webp" alt="Learn the history of the Salt Lake Temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple-8.webp" alt="Salt Lake Temple, learn about this amazing temple">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/salt-lake-temple-9.webp" alt="Salt Lake Temple, A beauty and a joy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+      <footer role="contentinfo">
+        <p>&copy;<span id="currentyear"></span> Oribi Teo-Iyalla - Nigeria</p>
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+</body>
+</html>

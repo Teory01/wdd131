@@ -1,6 +1,6 @@
 /* Base Styles */
 :root {
-    --primary-color: #4a6fa5;
+    --primary-color: #3a5a8a; /* Darkened from #4a6fa5 for better contrast */
     --secondary-color: #166088;
     --accent-color: #4fc3dc;
     --text-color: #333;
@@ -74,13 +74,8 @@ header {
 
 .primary-nav a:hover {
     background-color: var(--secondary-color);
+    opacity: 1; /* Ensures full opacity on hover */
 }
-
-.primary-nav a:hover {
-  opacity: 0.8;
-  transition: opacity 0.3s;
-}
-
 
 /* Main Content */
 main {
@@ -95,11 +90,16 @@ main h1 {
     margin-bottom: 2rem;
 }
 
-
 .temple-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+}
+
+.temple-grid img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 figure {
@@ -115,12 +115,6 @@ figure:hover {
     transform: translateY(-5px);
 }
 
-img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
 figcaption {
     padding: 1rem;
     text-align: center;
@@ -131,7 +125,7 @@ figcaption {
 /* Footer Styles */
 footer {
     background-color: var(--dark-color);
-    color: white;
+    color: rgb(248, 241, 241);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
@@ -142,15 +136,11 @@ footer {
     margin: 0 auto;
 }
 
-#lastModified { /* Fixed typo from #lastmodified to match HTML */
-  color: rgba(255, 255, 255, 0.9); /* Increased opacity for better contrast */
-  font-style: roboto;
+#lastModified {
+    color: rgba(255, 255, 255, 0.9);
+    font-style: roboto;
 }
 
 .primary-nav {
-  display: none;
-}
-
-.primary-nav[data-visible="true"] {
-  display: block;
+    display: none;
 }

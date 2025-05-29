@@ -8,10 +8,6 @@ hamburger.addEventListener('click', () => {
   hamburger.setAttribute('aria-expanded', !isExpanded);
 });
 
-// Footer dynamic content
-document.getElementById('currentyear').textContent = new Date().getFullYear();
-document.getElementById('lastmodified').textContent = document.lastModified;
-
 // Display current year
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 

@@ -1,0 +1,21 @@
+main {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main img {
+    display: block;
+    animation: fadeout 5s ease-in-out;
+    padding: 2rem;
+}
+
+@keyframes fadeout {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

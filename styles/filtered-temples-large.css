@@ -1,0 +1,32 @@
+/* Large View Styles */
+@media (min-width: 768px) {
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    .primary-nav {
+        display: block;
+        width: auto;
+    }
+    
+    .primary-nav ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

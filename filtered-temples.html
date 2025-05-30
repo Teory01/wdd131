@@ -6,25 +6,17 @@
     <title>Temple Album</title>
     <meta name="description" 
      content="Explore stunning photos of the Salt Lake Temple in a responsive gallery. Learn about its architecture and history.">
-    
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link 
-     rel="preload" 
+    <link rel="preload" 
      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" 
      as="style"
-     onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap">
-    </noscript>
-    <!-- CSS Files (Mobile First) -->
-    <link rel="stylesheet" href="styles/temples.css">
-    <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 768px)">
-    
-    <!-- Deferred JavaScript -->
-    <script src="scripts/getdates.js" defer></script>
+     onload="this.onload=null;this.rel='stylesheet'"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap">   
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css" media="(min-width: 768px)">
+    <script defer src="scripts/filtered-temples.js"></script>
+
 </head>
 <body>
     <header>
@@ -39,20 +31,23 @@
             </button>
             <nav class="primary-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#">Old</a></li>
-                    <li><a href="#">New</a></li>
-                    <li><a href="#">Large</a></li>
-                    <li><a href="#">Small</a></li>
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#" id="old">Old</a></li>
+                    <li><a href="#" id="new">New</a></li>
+                    <li><a href="#" id="large">Large</a></li>
+                    <li><a href="#" id="small">Small</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <main>
-        <h1>Home</h1>
+    <main> 
+        <div id="temples-container"></div>
+
+        <h1><Temple Album></h1>
         <div class="temple-grid">
-            <figure>
+            
+            <!---<figure>
                 <img src="images/salt-lake-temple-1.webp" alt="Salt Lake Temple, learn about this amazing temple" 
                  width="800" height="600" loading="lazy" style="max-width: 100%; height: auto;">
                 <figcaption>Salt Lake Temple</figcaption>
@@ -96,7 +91,7 @@
                 <img src="images/salt-lake-temple-9.webp" alt="Salt Lake Temple, A beauty and a joy"
                  width="800" height="600" loading="lazy" style="max-width: 100%; height: auto;">
                 <figcaption>Salt Lake Temple</figcaption>
-            </figure>
+            </figure>--->
         </div>
     </main>
 

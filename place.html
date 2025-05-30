@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131 - Dynamic Web Fundamentals - Oribi Teo-Iyalla</title>
+        <meta name="author" content="[Your Name]"/>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - [Your Name]"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@200;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/place.css">
+        <script defer src="scripts/place.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Tokyo</h1>
+        </header>
+
+        <main>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/tokyo.webp" media="(min-width: 1000px)">
+                    <source srcset="images/tokyo.webp" media="(min-width: 640px)">
+                    <img src="images/tokyo-small.webp" alt="Tokyo skyline" width="500" height="250">
+                </picture>
+
+                <div class="heroleftside">
+                    <h2>Data</h2>
+                    <ul>
+                        <li><strong>Population:</strong> 13,960,000</li>
+                        <li><strong>Area:</strong> 2,194 km²</li>
+                        <li><strong>Capital:</strong> Tokyo (de facto)</li>
+                        <li><strong>Official language:</strong> Japanese</li>
+                        <li><strong>Time Zone:</strong> UTC+9</li>
+                        <li><strong>Currency:</strong> Japanese yen (¥)</li>
+                        <li><strong>Calling Code:</strong> +81</li>
+                        <li><strong>Internet TLD:</strong> .jp</li>
+                    </ul>
+                </div>
+
+                <div class="herorightside">
+                    <div class="weatherimage">
+                        <h2>Weather</h2>
+                        <img src="images/weather-icon.svg" alt="weather icon">
+                    </div>
+                    <ul>
+                        <li id="temperature"></li>
+                        <li id="conditions"></li>
+                        <li id="wind"></li>
+                        <li id="windchill"></li>
+                    </ul>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            <p>
+                <span id="currentyear">&copy;</span> Oribi Teo-Iyalla - Nigeria
+            </p>
+            
+            <p id="lastModified">Last Modification: </p>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,59 @@
+/* Starter CSS */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fix padding on div.callout */
+div.callout {
+  padding: 1.5rem;
+  background-color: #e6f2ff; /* Original light blue */
+  color: #333; /* Changed from original to improve contrast */
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+/* Fix h2 alignment */
+h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+/* Main layout with two columns */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Make h2 span both columns */
+main h2 {
+  grid-column: 1 / -1;
+}
+
+/* Banner styling to replace marquee */
+.banner {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid #ddd;
+  margin: 1rem 0;
+}
+
+/* Move footer content to the left */
+footer {
+  text-align: left;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Improved contrast for callout - passes AA and AAA */
+div.callout {
+  background-color: #0056b3; /* Darker blue */
+  color: #ffffff; /* White text */
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border-radius: 4px;
+}

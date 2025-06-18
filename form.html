@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Oribi Teo-Iyalla</title>
+    <meta name="author" content="Oribi Teo-Iyalla"/>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Oribi Teo-Iyalla"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <div id="form-side">
+            <form action="review.html" method="get">
+                
+                <div class="contain">
+                    <label for="product" >Product Name
+                        <select name="product" id="product" required>
+                            <option value="" selected disabled>Select a product.....</option>
+                            <!-- an array is used to create the remaining options dynamically using JS -->
+                        </select>
+                    </label>
+                </div>
+
+<!-- 
+                <label class="label" for="r">Page Rating
+                    <div id="rangevalue">0</div>
+                    <input type="range" id="r" name="r" min="1" max="10" step="1" value="1"> 
+                </label>  -->
+                <div class="contain">
+                    <label>Overall Rating</label>
+                    <div class="stars">
+                        <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+                        <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+                        <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+                        <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+                        <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+                    </div>
+                </div>
+
+                <div class="contain">
+                    <label for="date">Date of Installation
+                        <input type="date" id="date" name="date" value="2025-01-01" required>
+                    </label>
+                </div>
+
+                <div class="contain checkbox">
+                    <div>Which features did you find usefile in the product?<br><i>(Check all that apply)</i></div>
+                    <label class="check"><input type="checkbox" name="features" value="Durability">Durability</label>
+                    <label class="check"><input type="checkbox" name="features" value="Ease of Use">Ease of Use</label>
+                    <label class="check"><input type="checkbox" name="features" value="Performance">Performance</label>
+                    <label class="check"><input type="checkbox" name="features" value="Design">Design</label>
+                </div>
+
+                <div class="contain">
+                    <label>Written Review<span class="optional">(Optional)</span>
+                        <textarea id="review" name="review" cols="30" rows="6" 
+                        placeholder="Give us a heartfelt review" spellcheck="true" ></textarea></label>
+                </div>
+
+                <div class="contain">
+                    <label>Your Name<span class="optional">(Optional)</span>
+                        <input type="text" id="name" name="name" placeholder="Your Name"></label>
+                </div>
+
+                <div class="contain">
+                    <input type="submit" value="Post Review" id="submit">
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            <span id="currentyear">&copy;</span> Oribi Teo-Iyalla - Nigeria
+        </p>
+
+        <p id="lastModified">Last Modification: </p>
+    </footer>
+    
+</body>
+</html>

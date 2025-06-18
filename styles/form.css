@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    margin: auto;
+    font-family: 'fantasy';
+}
+
+header{
+    background-color: #032d47;
+    color: white;
+    padding: 10px;
+    height: 120px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1{
+    font-size: 20px;
+    font-weight: 100;
+}
+
+main {
+    width: 30%;
+    margin: 2rem auto;
+    background-color: #032d4764;
+}
+
+form {
+    padding: 1rem 0;
+}
+
+
+.contain{
+    margin: 1rem;
+}
+/* stars */
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+
+.stars > label {
+	color: red;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); /* remove blinking cursor*/
+}
+
+.stars label:hover {
+	color: #000;
+    transition: 0.5s ease;
+}
+
+.stars label::before {
+	content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+label, textarea, input[type="date"], select{
+    display: block;
+}
+
+input[type="text"],
+input[type="submit"],
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+    /* height: 20px; */
+}
+
+.check {
+    margin: 20px 0;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #032d47;
+    padding: 10px;
+    height: 120px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}
+
+#currentyear {
+    color: white;
+}
+
+#main {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main p{
+    margin: 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 90%;
+    border-radius: 7px;
+    font-size: 30px;
+    font-weight: 700;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px){
+
+    main {
+        width: 50%;
+        margin: 2rem auto;
+        background-color: #032d4764;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="submit"],
+    textarea{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    main {
+        width: 60%;
+        margin: 2rem auto;
+        background-color: #032d4764;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    input[type="submit"],
+    textarea{
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+}

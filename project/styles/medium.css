@@ -1,0 +1,350 @@
+@media screen and (width >= 641px) and (width <= 820px) {
+    #menu, .delete {
+        display:  none;
+    }
+
+    #nav{
+        display: block;
+    }
+
+    .navigation {
+        position: relative;
+        left: 20px;
+        width: 100%;
+        display: flex;
+        gap: 16px;
+    }
+
+    .navigation a{
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    li.recent a {
+        font-size: 12px;
+    }
+
+    .navigation li{
+        display: block;
+    }
+
+    #home-hero-box section:first-of-type {
+        padding-left: 3rem;
+    }
+
+    .homeherobuttonscontainer div {
+        height: 250px;
+    }
+
+     .othercontactoptions {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .othercontactoptions section {
+        width: 350px;
+    }
+
+    .whatweoffer {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin: 0 2rem;
+    }
+
+    #hero-box {
+        max-height: 1000px;
+    }
+
+
+    .herobuttons a {
+        padding: min(4em, 20px);
+        margin: 0;
+        width: calc(120% /3);
+        height: calc(100%/5);
+        min-width: 48px;
+        min-height: 48px;
+        text-align: center;
+        font-size: clamp(13px, 12px, 14px);
+    }
+    .typewriter {
+        gap: unset;
+    }
+    .typewritertext {
+        font-size: 30px;
+    }
+    .photos {
+        margin-bottom: 10rem;
+    }
+    .photos, .photosContainer {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+    .ourVision div{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+    }
+    .visiontick {
+        margin: 0;
+        margin-right: 1rem;
+    }
+
+    #statements {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .writings article {
+        margin: 4rem 0 10rem;
+    }
+    
+
+    .container {
+        display: grid;
+        gap: 10px; /* Adjust spacing */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .fourContainersDiv {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        width: 100%;
+    }
+
+    .fourContainersDiv div {
+        display: unset;
+        vertical-align: unset;
+    }
+
+    #whyjoincontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    .whyjoin1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 100%;
+    }
+
+    .whyjoin1 h2 {
+        font-size: clamp(3.5rem, 2.5vw, 4.5rem);
+    }
+
+    .whyjoin2 {
+        display: block;
+    }
+
+    .whyjoin2>ul>li {
+        font-size: 1rem;
+    }
+    
+    #hubberherobox {
+        padding: 0 min(100vw, 30px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        min-height: 700px;
+    }
+
+    .hubberherocontent1 h2 {
+        font-size: clamp(3.5rem, 2.5vw, 4.5rem);
+        color: white;
+        text-align: center;
+        margin: 0;
+    }
+
+    .hubberherocontent2 h3 {
+        font-size: clamp(2em, 2em, 1em);
+        text-align: center;
+        margin: 0;
+    }
+
+    .hubberherocontent3 p {
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
+    }
+
+    .hubberherocontent3 div {
+        width: 90%;
+        margin: 0 auto;
+    }
+    input[type="text"], input[type="tel"], input[type="email"], .tab select, .tab textarea {
+        width: 100%;
+    }
+
+}
+
+
+
+@media screen and (width >= 821px){
+    #menu, .delete {
+        display:  none;
+    }
+
+    #nav{
+        display: block;
+    }
+
+    .navigation {
+        position: relative;
+        left: 20px;
+        width: 100%;
+        display: flex;
+        gap: 16px;
+    }
+
+    .navigation a{
+        padding: 8px 12px;
+        font-size: 15px;
+    }
+
+    .navigation li{
+        display: block;
+    }
+
+    .homeherobuttonscontainer div{
+        height: 200px;
+        margin: 2rem;
+    }
+    
+
+    .offerscontainer {
+        width: 100%;
+        margin: 1rem auto;
+        background-color: white;
+        border-radius: 50px;
+    }
+    
+    .whatweoffer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        margin: 0 auto;
+        gap: 30px;
+        padding-bottom: 3rem;
+    }    
+
+    #hero-box section h2 {
+        font-size: 80px;
+    }   
+
+    .herobuttons a {
+        height: 40%;
+        width: 150px;
+    }
+    
+    .herobuttons a:hover {
+        background-color: #d3d9d48c;
+        transform: scale(1.05);
+    }
+    
+    .herobuttons a:last-of-type {
+        background-color: transparent;
+        border: 1px solid #D3D9D4;
+        margin-left: 10px;
+        color: #D3D9D4;
+    }
+    
+    .herobuttons a:last-of-type:hover {
+        background-color: #d3d9d48c;
+        color: #2e3944;
+    }
+
+    .talktorealpeople h6 {
+        color: #212a31c7;
+        text-align: center;
+    }
+    
+    .othercontactoptions {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        margin: 5rem 0;
+    }
+    
+    .contactform{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 200px;
+        width:400px;
+        text-align: center;
+        border: 1px solid #212a3147;
+        border-radius: 20px;
+        padding: 1rem 2rem;
+    }
+    
+    .othercontactoptions a{
+        padding: 17px 2rem;
+        text-decoration: none;
+        background-color: #e98717;
+        border-radius: 30px;
+        color: #0f1318;
+        width:190px;
+        transition: 0.3s ease-in-out;
+    }
+    
+    #hubberherobox {
+        padding: 8rem 0 2rem 4rem;
+    }
+
+    .hubberherocontent1 h2 {
+        font-size: 50px;
+    }   
+
+    .hubberherocontent2 h3 {
+        font-size: 30px;
+    }
+
+    .hubberherocontent3 p {
+        font-size: 15px;
+        font-weight: 100;
+    }
+    
+    .whyjoin1 h2 {
+        font-size: 60px;
+        font-weight: 900;
+    }
+
+    .whyjoin2 ul li {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 2.1;
+    }
+
+    #hubberherobox {
+        height: 400px;
+        justify-content: flex-end;
+        padding: 0 0 2rem 5rem;    
+    }
+
+    #regform {
+        width: 40vw;
+    }
+
+    .tab select,
+    .tab input[type="text"],
+    .tab input[type="tel"],
+    .tab input[type="email"],
+    .tab textarea{
+        width: 100%;
+    }
+
+
+}
+

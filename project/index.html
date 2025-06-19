@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Oribi Teo-Iyalla" />
+  <meta name="description" content="Dev Insights - A Tech Blog for Web Developers" />
+  <meta property="og:title" content="Dev Insights | Web Development Tutorials" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/preview.webp" />
+  <meta property="og:url" content="https://yourgithub.io/devinsights" />
+  <title>Dev Insights - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/medium.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="icon" href="../images/tech-icon.png">
+  <script type="module" src="scripts/sidenav.js"></script>
+  <script src="scripts/hamburger.js" defer></script>
+</head>
+
+<body>
+  <div id="content">
+    <header id="contact-header">
+      <div class="header-box">
+        <a id="logo_link1" href="index.html">
+          <img src="images/white.webp" alt="Dev Insights Logo" width="100" height="120">
+        </a>
+      </div>
+
+      <nav>
+        <ul class="navigation">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="contacts.html">Contact Us</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li class="recent"><span>Latest</span></li>
+        </ul>
+        <div class="justrecent"></div>
+        <div id="recentContainer" class="recentContainer">
+          <section>
+            <h2>Latest Articles</h2>
+          </section>
+        </div>
+
+        <span class="delete">
+          <i class="fa fa-close"></i>
+        </span>
+
+      </nav>
+
+
+      <a id="menu"><i class="fa fa-bars"></i></a>
+    </header>
+
+    <div class="searchContainer">
+      <a id="sideMenu"><i class="fa fa-bars"></i></a>
+      <div id="searchbox">
+        <input type="search" id="search" name="q" placeholder="Search Articles">
+        <button aria-label="button" id="search-icon"><i class="fa fa-search fa-xl"></i></button>
+      </div>
+    </div>
+
+    <div class="just"></div>
+
+    <div id="mySidenav" class="sidenav">
+      <div id="serviceContainer">
+        <ul id="serviceUnorderedList">
+          <li><span>Pick favorite Topics</span></li>
+        </ul>
+        <ul id="comingSoonUnorderedList">
+          <li><span>Coming Soon</span></li>
+        </ul>
+      </div>
+    </div>
+    <span class="close"><i class="fa-solid fa-close"></i></span>
+
+    <main id="index-main">
+      <div id="home-hero-box">
+        <section>
+          <h2>Welcome to Dev Insights – Your Guide to Web Development</h2>
+          <span class="homespan1">
+            Discover in-depth tutorials, JavaScript tips, and front-end techniques that will elevate your
+            skills.<br><br>
+            <span class="seamless">Insightful</span>
+            <span class="affordable">Practical</span>
+            <span class="time">Developer-focused</span>
+          </span>
+        </section>
+
+        <div class="homeherobuttonscontainer">
+          <div>
+            <span class="find">Pick favorite Articles</span>
+            <a href="form.html" target="_blank">fill out a form</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="howitworkscontainer">
+        <section class="howitworks">
+          <h2>Get the Most Out of Dev Insights</h2>
+        </section>
+        <section class="typewriter">
+          <h2 class="typewritertext t1">Read</h2>
+          <h2 class="typewritertext t2">Practice</h2>
+          <h2 class="typewritertext t3">Grow</h2>
+        </section>
+      </div>
+    </main>
+
+    <div id="backToTop">
+      <button class="accordion">Back to top</button>
+    </div>
+
+    <footer id="footer">
+      <div class="firstfooterwrapper">
+        <div class="footer-box">
+          <a href="index.html">
+            <img src="../images/tech-icon.png" alt="Dev Insights Logo" loading="lazy" width="100" height="120">
+          </a>
+        </div>
+
+        <div class="fourContainersDiv">
+          <div>
+            <section>
+              <h3>Quick Links</h3>
+              <a class="footer-links" href="index.html">Home</a>
+              <a class="footer-links" href="tutorials.html">Tutorials</a>
+              <a class="footer-links" href="playground.html">Playground</a>
+              <a class="footer-links" href="about.html">About</a>
+            </section>
+          </div>
+          <div>
+            <section class="populate">
+              <h3>Categories</h3>
+              <a>HTML</a>
+              <a>CSS</a>
+              <a>JavaScript</a>
+              <a>Web Performance</a>
+              <a>Best Practices</a>
+              <a>Animations</a>
+            </section>
+          </div>
+          <div>
+            <section class="anticipate">
+              <h3>Resources</h3>
+              <span>Code Playground</span>
+              <span>Newsletter</span>
+              <span>Privacy Policy</span>
+              <span>Terms & Conditions</span>
+            </section>
+          </div>
+          <div>
+            <section class="anticipate">
+              <h3>Popular Posts</h3>
+              <span>Understanding Flexbox</span>
+              <span>Vanilla JS Tricks</span>
+              <span>Debugging Like a Pro</span>
+              <span>Async JS in Depth</span>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondfooterwrappercontainer">
+        <div class="secondfooterwrapper">
+          <div id="social-container">
+            <div class="social-links">
+              <a href="https://facebook.com" aria-label="facebook" target="_blank"><i
+                  class="fa-brands fa-facebook"></i></a>
+              <a href="https://twitter.com" aria-label="twitter" target="_blank"><i
+                  class="fa-brands fa-twitter"></i></a>
+              <a href="https://instagram.com" aria-label="instagram" target="_blank"><i
+                  class="fa-brands fa-instagram"></i></a>
+              <a href="https://github.com" aria-label="github" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="copyright">
+              <p><span>Dev Insights</span> &copy;Copyright. All rights reserved.<br>2025 -
+                Oribi Teo-Iyalla</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const scrollToTop = document.querySelector(".accordion");
+      scrollToTop.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    </script>
+  </div>
+</body>
+
+</html>

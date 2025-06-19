@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Osamagumwende Flourish Idahosa-Sunny" />
+    <meta name="description" content="ServiceHub - About Us" />
+    <meta property="og:title" content="ServiceHub Company" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://avee1000.github.io/wdd230/personal/images/homepage/aerial.webp" />
+    <meta property="og:url" content="https://avee1000.github.io/wdd131/personal/aboutus.html" />
+    <title>ServiceHub - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" href="../images/tech-icon.png">
+    <script type="module" src="scripts/sidenav.js"></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <!-- <script src="scripts/table.js" defer></script>
+    <script src="scripts/benefits-fade.js" defer></script> -->
+
+
+</head>
+
+<body>
+    <div id="content">
+        <header id="contact-header">
+            <div class="header-box">
+                <a id="logo_link1" href="index.html">
+                    <img src="images/white.webp" alt="Dev Insights Logo" loading="lazy" width="100" height="120">
+                </a>
+            </div>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="contacts.html">Contact Us</a></li>
+                    <li><a href="aboutus.html" class="active">About Us</a></li>
+                    <li class="recent"><span>Latest</span></li>
+                </ul>
+                <div class="justrecent"></div>
+                <div id="recentContainer" class="recentContainer">
+                    <section><h2>Latest Articles</h2></section>
+                </div>
+                <span class="delete"><i class="fa fa-close"></i></span>
+            </nav>
+            <a id="menu"><i class="fa fa-bars"></i></a>
+        </header>
+
+        <div class="searchContainer">
+            <a id="sideMenu"><i class="fa-solid fa-bars"></i></a>
+            <div id="searchbox">
+                <input type="search" id="search" name="q" placeholder="Search Articles">
+                <button aria-label="search"><i class="fa fa-search fa-xl"></i></button>
+            </div>
+        </div>
+
+        <div class="just"></div>
+
+        <div id="mySidenav" class="sidenav">
+            <div id="serviceContainer">
+                <ul id="serviceUnorderedList">
+                    <li><span>Pick favorite Topics</span></li>
+                </ul>
+                <ul id="comingSoonUnorderedList">
+                    <li><span>Coming Soon</span></li>
+                </ul>
+            </div>
+        </div>
+        <span class="close"><i class="fa-solid fa-close"></i></span>
+
+        <main id="aboutus-main">
+            <section id="aboutus">
+                <div class="meet">
+                    <h2>Meet Dev Insights</h2>
+                    <p>"Code Better. Learn Smarter. Stay Ahead."</p>
+                </div>
+                <div id="statements">
+                    <div class="writings">
+                        <article>
+                            <div>
+                                <span class="redtick"></span>
+                                <h3>Your Source for Development Wisdom</h3>
+                            </div>
+                            <p>Welcome to <span class="servicehub">Dev Insights</span>, the place where developers,
+                                designers, and tech enthusiasts converge to level up. We deliver practical tutorials,
+                                JavaScript techniques, CSS mastery, and insightful commentary on web trends—all crafted
+                                to make you a smarter, faster, better developer.</p>
+                        </article>
+
+                        <article>
+                            <div>
+                                <span class="greentick"></span>
+                                <h3>Our Mission</h3>
+                            </div>
+                            <p>At <span class="servicehub">Dev Insights</span>, we’re on a mission to demystify coding
+                                and bring clarity to the ever-changing tech landscape. Whether you're just getting
+                                started or scaling into senior roles, we provide content that informs, challenges, and
+                                inspires.</p>
+                        </article>
+
+                        <article>
+                            <div>
+                                <span class="bluetick"></span>
+                                <h3>For Developers, By Developers</h3>
+                            </div>
+                            <p><span class="servicehub">Dev Insights</span> is powered by a team of passionate
+                                professionals and learners. We know what matters to devs because we are devs—sharing
+                                real-world solutions, hard-earned lessons, and coding tricks that actually work.</p>
+                        </article>
+                    </div>
+
+                    <div class="photos">
+                        <div class="photosContainer">
+                            <figure><img src="images/phoneimage.webp" alt="Developer at Work" loading="lazy"></figure>
+                            <div class="ourVision">
+                                <div><h3>Our Vision</h3><span class="visiontick"></span></div>
+                                <p>To build a trusted space where curious minds come to learn, grow, and connect. We
+                                    envision <span class="servicehub">Dev Insights</span> as the daily go-to for
+                                    actionable knowledge and the spark behind your next breakthrough.</p>
+                            </div>
+                            <figure><img src="images/man.webp" alt="Programming Concept" loading="lazy"></figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div id="offers">
+                <div class="offerscontainer">
+                    <article><h2>What We Provide</h2></article>
+                    <article class="whatweoffer">
+                        <div>
+                            <h3>For Beginners</h3>
+                            <ul>
+                                <li><strong>Step-by-Step Tutorials</strong></li>
+                                <li><strong>Project-Based Learning</strong></li>
+                                <li><strong>Beginner-Friendly Explanations</strong></li>
+                                <li><strong>Community Support</strong></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>For Experienced Devs</h3>
+                            <ul>
+                                <li><strong>Deep-Dive Articles</strong></li>
+                                <li><strong>Performance Optimization Tips</strong></li>
+                                <li><strong>Tool & Framework Reviews</strong></li>
+                                <li><strong>Career Growth Resources</strong></li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+
+        <div id="backToTop">
+            <button class="accordion">Back to top</button>
+        </div>
+
+        <footer id="footer">
+            <div class="firstfooterwrapper">
+                <div class="footer-box">
+                    <a href="index.html"><img src="../images/tech-icon.png" alt="Dev Insights Logo" loading="lazy" width="100" height="120"></a>
+                </div>
+                <div class="fourContainersDiv">
+                    <div>
+                        <section>
+                            <h3>Quick Links</h3>
+                            <a class="footer-links" href="index.html">Home</a>
+                            <a class="footer-links" href="aboutus.html">About</a>
+                            <a class="footer-links" href="form.html">Subscribe</a>
+                            <a class="footer-links" href="contactus.html">Contact</a>
+                        </section>
+                    </div>
+                    <div>
+                        <section class="populate">
+                            <h3>Topics</h3>
+                            <a>HTML & CSS</a>
+                            <a>JavaScript</a>
+                            <a>Web APIs</a>
+                            <a>Accessibility</a>
+                            <a>React</a>
+                            <a>Testing & Debugging</a>
+                        </section>
+                    </div>
+                    <div>
+                        <section class="anticipate">
+                            <h3>Resources</h3>
+                            <span>Dev Tools</span>
+                            <span>VS Code Extensions</span>
+                            <span>Community Forums</span>
+                            <span>Licensing</span>
+                            <span>Open Source Projects</span>
+                        </section>
+                    </div>
+                    <div>
+                        <section class="anticipate">
+                            <h3>Learn More</h3>
+                            <span>Weekly Newsletters</span>
+                            <span>Trending Posts</span>
+                            <span>Interview Prep</span>
+                            <span>Video Guides</span>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secondfooterwrappercontainer">
+                <div class="secondfooterwrapper">
+                    <div id="social-container">
+                        <div class="social-links">
+                            <a href="https://facebook.com" aria-label="facebook" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://twitter.com" aria-label="twitter" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="https://instagram.com" aria-label="instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://github.com" aria-label="github" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="copyright">
+                            <p><span>Dev Insights</span> &copy; Copyright. All rights reserved.<br>2025 - Oribi Teo-Iyalla</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const scrollToTop = document.querySelector(".accordion");
+            scrollToTop.addEventListener("click", () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        </script>
+    </div>
+</body>
+</html>

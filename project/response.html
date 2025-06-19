@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Osamagumwende Flourish Idahosa-Sunny" />
+    <meta name="description" content="ServiceHub - Feedback" />
+    <meta property="og:title" content="ServiceHub Company" />
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://avee1000.github.io/wdd230/personal/images/homepage/aerial.webp" />
+    <meta property="og:url" content="https://avee1000.github.io/wdd131/personal/response.html" />
+    <title>ServiceHub - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="icon" href="images/favicon.ico">
+    <script type="module" src="scripts/sidenav.js"></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/countries.js" defer></script>
+    <script type="module" src="scripts/forms.js"></script>
+
+
+
+</head>
+
+<body>
+    <div id="content">
+        <header id="contact-header">
+            <div class="header-box">
+                <a id="logo_link1" href="index.html">
+                    <img src="images/white.webp" alt="ServiceHub Logo" loading="lazy" width="100" height="120">
+                </a>
+                <!-- <h1>......</h1> -->
+            </div>
+
+            <nav>
+                <ul class="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contacts.html">Contact Us</a></li>
+                    <li class="recent"><span>Recents</span></li>
+                </ul>
+                <div class="justrecent"></div>
+                <div id="recentContainer" class="recentContainer">
+                    <section>
+                        <h2>..</h2>
+                    </section>
+                </div>
+
+                <span class="delete">
+                    <i class="fa fa-close"></i>
+                </span>
+            </nav>
+            <a id="menu"><i class="fa fa-bars"></i></a>
+        </header>
+
+        <div class="searchContainer">
+            <a id="sideMenu">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <div id="searchbox">
+                <input type="search" id="search" name="q" placeholder="Search Services">
+                <button id="search-icon" aria-label="button"><i class="fa-solid fa fa-search fa-xl"></i></button>
+            </div>
+        </div>
+
+        <div class="just"></div>
+
+        <div id="mySidenav" class="sidenav">
+            <div id="serviceContainer">
+                <ul id="serviceUnorderedList">
+                    <li><span>Available Services</span></li>
+                </ul>
+                <!-- nav elements to be populated in JS -->
+
+                <ul id="comingSoonUnorderedList">
+                    <li><span>Coming soon</span></li>
+                </ul>
+            </div>
+        </div>
+        <span class="close">
+            <i class="fa-solid fa-close"></i>
+        </span>
+
+
+        <main id="record-main">
+            <p class="recordmsg">Thank you for taking your time to fill out the form. <br><br> Your application has been
+                recieved and will be reviewed promptly by our team.</p>
+        </main>
+
+        <div id="backToTop">
+            <button class="accordion">Back to top</button>
+        </div>
+
+
+        <footer id="footer">
+            <div class="firstfooterwrapper">
+                <div class="footer-box">
+                    <a href="index.html">
+                        <img src="images/white.webp" alt="ServiceHub Logo" loading="lazy" width="100" height="120">
+                    </a>
+                </div>
+
+                <div class="fourContainersDiv">
+                    <div>
+                        <section>
+                            <h3>Quick Links</h3>
+                            <a class="footer-links" href="index.html">Home</a>
+                            <a class="footer-links" href="aboutus.html">Why Choose Us</a>
+                            <a class="footer-links" href="form.html">Join as a Provider</a>
+                            <a class="footer-links" href="contactus.html">Contact Us</a>
+                        </section>
+                    </div>
+                    <div>
+                        <section class="populate">
+                            <h3>Popular Categories</h3>
+                            <a>Plumbing</a>
+                            <a>Barbing</a>
+                            <a>Moving</a>
+                            <a>Technical Support</a>
+                            <a>Tailoring</a>
+                            <a>Event Planning</a>
+                            <a>Pet Care Services</a>
+                        </section>
+                    </div>
+                    <div>
+                        <section class="anticipate">
+                            <h3>Support & Help</h3>
+                            <span>How it Works</span>
+                            <span>FAQs</span>
+                            <span>Service Provider Help Center</span>
+                            <span>Privacy Policy</span>
+                            <span>Terms & Conditions</span>
+                            <span>Event Planning</span>
+                        </section>
+                    </div>
+                    <div>
+                        <section class="anticipate">
+                            <h3>Blog & Resources</h3>
+                            <span>Expert Tips & Guides</span>
+                            <span>Trending Services</span>
+                            <span>Success Stories</span>
+                            <span>Video Tutorials</span>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="secondfooterwrappercontainer">
+                <div class="secondfooterwrapper">
+                    <!-- <div class="otherfooterlinks">
+                            <div class="firstrowlink">
+                                <a><strong>Jobs</strong> <br>& <br>Careers</a>
+                                <a><strong>Business</strong> <br>Partners<br>& <br>affiliates</a>
+                                <a><strong>Site</strong><br>Credits</a>
+                                <a><strong>Referral</strong><br>Program</a>
+                            </div>
+                            <div class="secondrowlink">
+                                <a><strong>Customer</strong><br>Testimonials</a>
+                                <a><strong>Service</strong><br>Areas</a>
+                                <a><strong>Press</strong><br>&<br>Media</a>
+                                <a><strong>Gift Cards</strong><br>or<br>Vouchers</a>
+                            </div>
+                        </div> -->
+                        <div id="social-container">
+                            <div class="social-links">
+                                <a href="https://facebook.com" aria-label="facebook" target="_blank">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="https://twitter.com" aria-label="twitter" target="_blank">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                                <a href="https://instagram.com" aria-label="instagram" target="_blank">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://en.wikipedia.org/wiki/Cozumel" aria-label="wikipedia" target="_blank">
+                                    <i class="fa-brands fa-wikipedia-w"></i>
+                                </a>
+                            </div>
+                        <div class="copyright">
+                            <p><span>ServiceHub</span> &copy;Copyright. All rights reserved.<br>2025-
+                                Osamagumwende Flourish Idahosa-Sunny</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script>
+            const scrollToTop = document.querySelector(".accordion");
+
+            scrollToTop.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        </script>
+
+
+
+    </div>
+</body>
+
+</html>
